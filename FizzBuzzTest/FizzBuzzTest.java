@@ -1,14 +1,15 @@
 package FizzBuzz.FizzBuzzTest;
 
+
+
 import FizzBuzz.*;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-
-
 /**
  * Created by tszin on 05/06/2017.
  */
 public class FizzBuzzTest {
+
     /**
      * Test of IsDivisorThree method, of class FizzBuzz.
      */
@@ -19,6 +20,7 @@ public class FizzBuzzTest {
         boolean expResult = true;
         boolean result = FizzBuzz.IsDivisorThree(i);
         assertEquals(expResult, result);
+
     }
 
     /**
@@ -27,10 +29,11 @@ public class FizzBuzzTest {
     @Test
     public void testIsDivisorFive() {
         System.out.println("IsDivisorFive");
-        int i = 20;
+        int i = 10;
         boolean expResult = true;
         boolean result = FizzBuzz.IsDivisorFive(i);
         assertEquals(expResult, result);
+
     }
 
     /**
@@ -39,10 +42,11 @@ public class FizzBuzzTest {
     @Test
     public void testHasDigitThree() {
         System.out.println("HasDigitThree");
-        int i = 24;
-        boolean expResult = false;
+        int i = 73;
+        boolean expResult = true;
         boolean result = FizzBuzz.HasDigitThree(i);
         assertEquals(expResult, result);
+
     }
 
     /**
@@ -55,6 +59,8 @@ public class FizzBuzzTest {
         boolean expResult = true;
         boolean result = FizzBuzz.HasDigitFive(i);
         assertEquals(expResult, result);
+
     }
+
 
 }
